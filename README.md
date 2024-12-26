@@ -1,89 +1,44 @@
-# Data Warehouse Automation Project
+# Access, MySQL, and MongoDB Database Project
 
-This project automates the creation and management of databases using Access, MySQL, and MongoDB. It includes scripts for creating database schemas, importing data from CSV files, and executing queries to analyze and manage data efficiently.
-
-## Project Structure
-
-- **`createDb_Access.py`**: Script for creating and managing an Access database.
-- **`createDb_MySql.py`**: Script for setting up a MySQL database.
-- **`createDb_MongoDB.py`**: Script for initializing a MongoDB database.
-- **CSV Files**: Contain data to be imported into the databases.
+## Project Overview
+This project demonstrates how to work with multiple database systems (Access, MySQL, MongoDB) to create, populate, and query data using Python scripts. It is designed to handle various aspects of database interaction, including schema creation, data import, and SQL query execution.
 
 ## Features
+- **Access Database**: 
+  - Create tables in Microsoft Access.
+  - Import data from CSV files.
+  - Execute SQL queries and display results.
 
-- Automated table creation for Employee, Company, Performance, and Absences datasets.
-- Data validation and import from structured CSV files.
-- Predefined SQL queries for insights like:
-  - Employee counts by company and country.
-  - Average salary calculations.
-  - Absence analysis by month.
+- **MySQL Database**: 
+  - Create tables in MySQL.
+  - Import data from CSV files.
+  - Execute SQL queries and display results.
 
-## Requirements
+- **MongoDB Database**: 
+  - Create collections in MongoDB.
+  - Import data from JSON files.
+  - Query and manipulate data using Python.
 
-- Python 3.7 or above
-- Required libraries:
-  - `pyodbc`
-  - `pandas`
-  - `mysql-connector-python` (for MySQL script)
-  - `pymongo` (for MongoDB script)
-- Microsoft Access ODBC Driver (for Access script)
-- MySQL Server (for MySQL script)
-- MongoDB Server (for MongoDB script)
 
-## Setup
+## How to Run
+1. Clone the repository to your local machine.
+2. Make sure you have Python installed on your system.
+3. Run the appropriate script based on the database you are working with:
+   - For Access: `python createDB_Access.py`
+   - For MySQL: `python createDB_MySql.py`
+   - For MongoDB: `python createDB_MongoDB.py`
 
-1. Clone the repository:
+4. Ensure the CSV files are in the same directory as the scripts to import data correctly.
 
-   ```bash
-   git clone <repository_url>
-   cd <repository_name>
-   ```
+## Prerequisites
+- Python 3.x
+- Microsoft Access Driver (for Access database)
+- MySQL Server (for MySQL database)
+- MongoDB Server (for MongoDB database)
 
-2. Install required Python libraries:
-   ```bash
-   pip install -r requirements.txt
-   ```
 
-## Usage
-
-### 1. Create Database and Tables
-
-Run the appropriate script to create the database and tables:
-
-- For Access:
-
-  ```bash
-  python createDb_Access.py
-  ```
-
-- For MySQL:
-
-  ```bash
-  python createDb_MySql.py
-  ```
-
-- For MongoDB:
-  ```bash
-  python createDb_MongoDB.py
-  ```
-
-### 2. Import Data
-
-Each script includes functionality to import data from CSV files. Ensure the CSV files are correctly formatted and placed in the specified directory.
-
-### 3. Execute Queries
-
-The scripts execute predefined queries to analyze the data and display results. Modify or add queries in the script as needed.
-
-## Notes
-
-- Ensure the Access database file exists before running the `createDb_Access.py` script.
-- Update connection strings and file paths in the scripts to match your environment.
+## Author
+Anass El Amrany
 
 ## License
-
-This project is open-source and available under the MIT License.
-
-## Contributors
-
-- **Anass El Amrany**
+This project is licensed under the MIT License
